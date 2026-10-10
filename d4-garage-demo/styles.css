@@ -51,3 +51,10 @@ blockquote footer{font-size:14px;color:var(--mut)}
 .foot{background:#111416;color:#8d9498;padding:20px 0;font-size:14px}
 .foot a{color:#8d9498}
 @media(max-width:720px){.zapis{grid-template-columns:1fr;gap:28px}.hero{padding:36px 0}.btn{width:100%;text-align:center}}
+.hero__in{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero__img{width:100%;height:auto;max-height:520px;object-fit:cover;object-position:50% 45%;border:2px solid var(--dark);border-radius:4px;box-shadow:6px 6px 0 var(--acc)}
+.motor{margin:32px 0 0;max-width:420px}
+.motor img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%;border-radius:4px;border:1px solid var(--line)}
+.motor figcaption{font-size:14px;color:var(--mut);margin-top:8px}
+.find{width:100%;height:auto;border-radius:4px;border:1px solid #3a4044}
+@media(max-width:720px){.hero__in{grid-template-columns:1fr}.hero__img{max-height:340px;box-shadow:4px 4px 0 var(--acc)}}
