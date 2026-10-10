@@ -1,0 +1,53 @@
+/* Палитра Б: графит + неоново-зелёный (фирменные цвета вывески) */
+:root{--bg:#f4f5f2;--ink:#1b1e20;--mut:#5b6266;--card:#fff;--line:#d9dcd6;--dark:#1b1e20;--acc:#b8ff2e;--acc-ink:#1b1e20;--link:#2f6b00}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+a{color:var(--link)}
+.top{background:var(--dark);position:sticky;top:0;z-index:5}
+.top__in{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{color:#fff;font-weight:800;font-size:22px;letter-spacing:.02em;text-decoration:none}
+.logo span{color:var(--acc);margin-left:6px;font-size:15px;letter-spacing:.14em}
+.top__tel{color:#fff;font-weight:600;text-decoration:none}
+.hero{padding:56px 0 48px;border-bottom:4px solid var(--acc);background:#fff}
+.stamp{display:inline-block;margin:0 0 16px;padding:4px 10px;border:1.5px dashed var(--mut);color:var(--mut);font:13px/1.4 ui-monospace,Consolas,monospace;text-transform:uppercase;letter-spacing:.06em}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.1;margin:0 0 16px;max-width:18em}
+.lead{font-size:19px;max-width:36em;color:var(--mut);margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-ink);font-weight:700;padding:15px 26px;border-radius:6px;text-decoration:none;border:2px solid var(--dark);box-shadow:3px 3px 0 var(--dark)}
+.btn:hover{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--dark)}
+.or{color:var(--mut)}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:12px 32px;padding:0;margin:32px 0 0;color:var(--mut);font-size:15px}
+.facts b{font-size:26px;color:var(--ink);margin-right:4px}
+.sec{padding:56px 0}
+.sec--alt{background:#fff;border-block:1px solid var(--line)}
+.sec--dark{background:var(--dark);color:#fff}
+.sec--dark .lead,.sec--dark dt{color:#aab1b5}
+.sec--dark a{color:var(--acc)}
+.sec--dark .btn{box-shadow:3px 3px 0 var(--acc);border-color:var(--acc)}
+h2{font-size:clamp(24px,4vw,34px);margin:0 0 8px}
+.sub{color:var(--mut);margin:0 0 28px}
+.nodes{list-style:none;counter-reset:n;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;padding:0;margin:0}
+.nodes li{counter-increment:n;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);padding:16px;border-radius:4px}
+.nodes li::before{content:"0" counter(n);font:13px ui-monospace,Consolas,monospace;color:var(--mut)}
+.nodes h3{margin:4px 0 6px;font-size:18px}
+.nodes p{margin:0;color:var(--mut);font-size:15px}
+.price{width:100%;border-collapse:collapse;margin:20px 0 12px}
+.price th,.price td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line)}
+.price th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+.price td:last-child,.price th:last-child{text-align:right;white-space:nowrap}
+i{font-style:normal;font-family:ui-monospace,Consolas,monospace;background:#eef9d0;padding:1px 6px;border-radius:3px;color:#46590a}
+.note{color:var(--mut)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:24px}
+blockquote{margin:0;background:var(--card);border:1px solid var(--line);padding:20px;border-radius:4px}
+blockquote p{margin:0 0 12px}
+blockquote footer{font-size:14px;color:var(--mut)}
+.link{font-weight:600}
+.zapis{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.contacts{margin:0}
+.contacts dt{font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-top:16px}
+.contacts dd{margin:2px 0 0}
+.foot{background:#111416;color:#8d9498;padding:20px 0;font-size:14px}
+.foot a{color:#8d9498}
+@media(max-width:720px){.zapis{grid-template-columns:1fr;gap:28px}.hero{padding:36px 0}.btn{width:100%;text-align:center}}
