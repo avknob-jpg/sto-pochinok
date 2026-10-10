@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "vibe-skills": {
+      "source": { "source": "github", "repo": "andrianov28/vibe-skills" }
+    }
+  },
+  "enabledPlugins": {
+    "vibe-sait@vibe-skills": true,
+    "vibe-publish@vibe-skills": true,
+    "vibe-mockup@vibe-skills": true,
+    "vibe-video@vibe-skills": true
+  }
+}
