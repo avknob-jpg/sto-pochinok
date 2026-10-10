@@ -1,0 +1,10 @@
+{
+  "name": "vibe-sait",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:publish": "PUBLISH=1 node scripts/build.mjs",
+    "preview": "npm run build && npx --yes serve dist"
+  }
+}
